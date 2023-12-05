@@ -42,6 +42,11 @@ int print_int(int num)
 		num = num * -1;
 	}
 
+	if (num == 0)
+	{
+		_putchar('0');
+		count++;
+	}
 	if (num / 10)
 	{
 		print_int(num / 10);
