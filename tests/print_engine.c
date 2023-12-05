@@ -33,22 +33,22 @@ int print_str(char *str)
 
 int print_int(int num)
 {
-	int byte = 0, digit;
+	int digit, count = 0;
 
-	if (num == 0)
+	if (num < 0)
 	{
-		_putchar('0');
-		byte++;
+		_putchar('-');
+		count++;
+		num = num * -1;
 	}
-	else
+
+	if (num / 10)
 	{
-		while (num != 0)
-		{
-			digit = num % 10;
-			_putchar(digit + 48);
-			byte++;
-			num = num / 10;
-		}
+		print_int(num / 10);
 	}
-	return (byte);
+	digit = num % 10;
+	putchar(digit + 48);
+	count++;
+
+	return (count);
 }

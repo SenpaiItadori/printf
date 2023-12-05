@@ -8,8 +8,7 @@
 
 int main(void)
 {
-	int num = 313;
-	unsigned int numi = 313;
+	int num = -413;
 	char *str = "Gokuuu";
 	char g = 'H';
 
@@ -20,7 +19,7 @@ int main(void)
 	_printf("He says he is %s\n", str);
 
 	printf("Everybody from the %d , Put your mf hands up\n", num);
-	_printf("Fuck free world, %i!\n", numi);
+	_printf("Fuck free world, %d!\n", num);
 
 	printf("I got a 90%%\n");
 	_printf("My mean score is also 90%%\n");
