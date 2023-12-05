@@ -35,6 +35,7 @@ int print_int(int num)
 {
 	int byte = 0, digit;
 
+	num = num % 1;
 	if (num == 0)
 	{
 		_putchar('0');
